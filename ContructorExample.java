@@ -8,5 +8,7 @@ class Bike1{
     public static void main(String args[]){  
         //calling a default constructor  
         Bike1 b = new Bike1();  
+
+        System.out.println(b);
     }  
 } 
