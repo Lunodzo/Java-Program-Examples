@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import static java.lang.Math.*;
 
 public class SeparateNumbers {
     public static void main(String[] args) {
@@ -10,6 +9,7 @@ public class SeparateNumbers {
 
         System.out.print("Enter integer: ");
 
-        Math.PI(number*number);
+        //PI did not work
+        Math.sqrt(number*number);
     }
 }

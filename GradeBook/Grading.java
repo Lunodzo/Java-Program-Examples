@@ -4,18 +4,18 @@ public class Grading{
     static int average;
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int grade, total = 0;
-        int counter = 0;
-        while (counter < 10) {
-            System.out.println("Enter Grade");
-            grade = input.nextInt();
-            total = total + grade;
-            counter = counter + 1;
-            System.out.printf("You have entered %d scores\n", counter);
-        }
-        average = total / counter;
-
+        try (Scanner input = new Scanner(System.in)) {
+            int grade, total = 0;
+            int counter = 0;
+            while (counter < 10) {
+                System.out.println("Enter Grade");
+                grade = input.nextInt();
+                total = total + grade;
+                counter = counter + 1;
+                System.out.printf("You have entered %d scores\n", counter);
+            }
+            average = total / counter;
+        
         System.out.printf("Total score is %d\n", total);
         System.out.printf("Average score is %d\n", average);
 
@@ -29,6 +29,7 @@ public class Grading{
         lunod.put("occupation", "Lecturer");
         
         System.out.println("OBJECT: "+lunod);
+        }
 
     }
 

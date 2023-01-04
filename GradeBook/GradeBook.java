@@ -23,18 +23,19 @@ public class GradeBook{
 	}
 
 	public void inputGrades(){
-		Scanner input = new Scanner(System.in);
-		int grade;
-		System.out.printf("Enter grades in the range of 0-100\n");
-		System.out.printf("Enter -1 to terminate\n");
+		try (Scanner input = new Scanner(System.in)) {
+			int grade;
+			System.out.printf("Enter grades in the range of 0-100\n");
+			System.out.printf("Enter -1 to terminate\n");
 
-		while(true){
-			grade = input.nextInt(); //Read grades
-			if(grade < 0 || grade > 100){
-				break;
-			}	
-			total = total + grade; //add grade to total
-			++gradeCounter;
+			while(true){
+				grade = input.nextInt(); //Read grades
+				if(grade < 0 || grade > 100){
+					break;
+				}	
+				total = total + grade; //add grade to total
+				++gradeCounter;
+			}
 		}
 	}
 

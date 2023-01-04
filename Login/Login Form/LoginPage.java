@@ -57,7 +57,7 @@ public class LoginPage implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
+        // Auto-generated method stub
         if (e.getSource()==resetButton) {
             userID.setText("");
             userPassword.setText("");
@@ -74,7 +74,6 @@ public class LoginPage implements ActionListener{
                     userMessageLabel.setText("Login success");
 
                     frame.dispose();
-                    WelcomePage welcomePage = new WelcomePage(userName);
                 }else{
                     userMessageLabel.setForeground(Color.red);
                     userMessageLabel.setText("Login failure");
